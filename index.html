@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apollo</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="page">
         <div class="container left">
             <h1>Apollo™</h1>
-            <h1>Exploring new frontiers one at a time</h1>
-            <p>@2023</p>
+            <h1>Exploring new<br>frontiers one at a<br>time</h1>
+            <p>2023</p>
         </div>
-        <div class="container right"></div>
+        <div class="container right">
+            <h1>Create Account</h1>
+            <form>
+                <label for="username">Name<input type="text" id="username" placeholder="Name" required></label>
+                <label for="email">Email<input type="email" id="email" placeholder="Email" required></label>
+                <label for="password">Password<input type="password" id="password" placeholder="Password" required></label>
+                <label for="password-confirm">Confirm Password<input type="password" id="password-confirm" placeholder="Confirm Password" required></label>
+                <input type="checkbox" id="check"><label for="checkbox">By checking the checkbox below you agree to the <a href=".">terms and conditions<a></label>
+                <button id="signup-button" type="submit">Sign up</button> 
+            </form>
+                <p>Already had an account? <a href=".">Log in here</a>.</p>
+        </div>
     </div>
 </body>
 </html>
