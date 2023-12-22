@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apollo</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="background"></div>>
@@ -17,11 +18,11 @@
         <div class="container right">
             <h1>Create Account</h1>
             <form method="post">
-                <label for="username">Name</label><input type="text" id="username" placeholder="Name" pattern="[A-Za-z]{1,32}" required>
-                <label for="email">Email</label><input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-                <label for="password">Password</label><input type="password" id="password" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
+                <label for="username">Name</label><input name="username" type="text" id="username" placeholder="Name" pattern="[A-Za-z]{1,32}" required>
+                <label for="email">Email</label><input name="user-email" type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <label for="password">Password</label><input name="user-password" type="password" id="password" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
                 <label for="password-confirm"></label><input type="password" id="password-confirm" placeholder="Confirm Password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
-                <input type="checkbox" id="check" required><label for="checkbox">By checking the checkbox below you agree to the <a href=".">terms and conditions</a></label>
+                <input type="checkbox" id="check" name="terms-service" required><label for="checkbox">By checking the checkbox below you agree to the <a href=".">terms and conditions</a></label>
                 <button id="signup-button" type="submit">Sign up</button> 
                 <p>Already had an account? <a href=".">Log in here</a>. </p>
             </form>
