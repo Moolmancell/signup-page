@@ -119,6 +119,10 @@ form input:not([type="checkbox"])::placeholder {
     font-weight: lighter;
 }
 
+form input:not([type="checkbox"]):valid {
+    border: 1px solid rgb(14, 255, 70);
+}
+
 form input[type="checkbox"] {
     padding: 8px;
     margin-right: 10px;
