@@ -118,7 +118,7 @@ form input:not([type="checkbox"]) {
 .show_pass {
     position: absolute;
     top: 20%;
-    margin-left: -4vw;
+    right: 20px;
 }
 
 .hidden {
@@ -237,11 +237,6 @@ form button {
     width: 100%;
 }
 
-.show_pass {
-    position: absolute;
-    top: 20%;
-    margin-left: -9vw;
-}
 }
 
 @media only screen and (max-width: 370px) {
