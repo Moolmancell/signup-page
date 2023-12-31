@@ -111,6 +111,32 @@ form input:not([type="checkbox"]) {
     appearance: none;
 }
 
+.pass-container {
+    position: relative;
+}
+
+.show_pass {
+    position: absolute;
+    top: 20%;
+    margin-left: -4vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.show_pass svg {
+    fill: #6f6f6f;
+}
+
+.click {
+    position: absolute;
+}
+
+input.click {
+    appearance: none;
+}
+
 form input:not([type="checkbox"])::placeholder {
     position: relative;
     left: 7px;
@@ -209,6 +235,12 @@ form {
 
 form button {
     width: 100%;
+}
+
+.show_pass {
+    position: absolute;
+    top: 20%;
+    margin-left: -9vw;
 }
 }
 
